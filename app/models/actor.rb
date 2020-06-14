@@ -9,7 +9,7 @@ class Actor < ActiveRecord::Base
 
   #eg: ['Tyrion Lannister - Game of Thrones']
   def list_roles
-    self.characters.map{|char|"#{char.name} - #{char.show}"}  
+    self.characters.map{|char|"#{char.name} - #{char.show.name}"}  
   end
 
 

@@ -5,7 +5,7 @@ class Character < ActiveRecord::Base
   #eg: 'Tyrion Lannister always says:"
   #         "A Lannister always pays his debts'
   def say_that_thing_you_say
-    '#{self.name} always says: #{self.catchphrase}'  
+    "#{self.name} always says: #{self.catchphrase}"  
   end
 
 end
